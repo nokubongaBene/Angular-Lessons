@@ -1,9 +1,15 @@
 <p>test works!</p>
-<h2>
-    My world
-    </h2>
-  
-    <h2>
-    Name is hidden
-    </h2>
-    
+
+<h2>{{"Hello " + parentData}}</h2>
+
+<button (click)="fireEvent()">Send Event</button>
+
+<h2>{{ parentData | lowercase }}</h2>
+<h2>{{ parentData | uppercase }}</h2>
+
+<h2>{{5.678 | number:'1.2-3'}}</h2>
+<h2>{{5.678 | number:'3.4-5'}}</h2>
+
+<!-- <h2>{{ date }}</h2> -->
+<!-- <h2>{{ date | date:'short' }}</h2> -->
+
